@@ -2,51 +2,63 @@ body {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.6;
   max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
-h1 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
+  margin: 0 auto;
+  padding: 0;
   color: #222;
+  background-color: #ffffff;
 }
 
+/* Barra superior azul */
+.topbar {
+  height: 8px;
+  background-color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Conteúdo */
+.container {
+  padding: 0 20px 40px 20px;
+}
+
+/* Título principal */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Subtítulos */
 h2 {
+  font-size: 20px;
   margin-top: 30px;
-  color: #444;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
 }
 
+/* Parágrafos */
 p {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
+/* Lista */
 ul {
-  margin: 10px 0 20px 20px;
+  margin-left: 20px;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
+/* Links estilo acadêmico */
 a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
+  color: #003366;
   text-decoration: underline;
 }
 
-strong {
-  color: #000;
+a:hover {
+  color: #0055aa;
 }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* Nome destacado */
+strong {
+  font-weight: bold;
 }
