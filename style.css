@@ -22,7 +22,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 22px;
   color: white;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -31,9 +31,17 @@ header h1 {
 
 .subtitle {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 15px;
-  margin-top: 8px;
-  font-weight: 500;
+  font-size: 22px;
+  margin-top: 12px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.project-title {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 38px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /* NAVBAR */
@@ -99,6 +107,10 @@ h2::before {
 
 /* LINKS & BUTTONS */
 p { margin: 16px 0; }
+ 
+ p + p {
+  margin-top: 24px;
+ }
 
 a {
   color: #667eea;
@@ -149,4 +161,104 @@ li::before {
   left: -20px;
   font-weight: bold;
   font-size: 16px;
+}
+
+/* TIMELINE */
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.timeline-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* TIMELINE */
+.timeline {
+  display: grid;
+  grid-template-columns: 280px repeat(10, 1fr);
+  gap: 6px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+  font-weight: 600;
+  text-align: center;
+  color: #1e293b;
+  font-size: 12px;
+  padding: 8px 4px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 6px;
+  margin-bottom: 4px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.activity-label {
+  font-weight: 600;
+  color: #1e293b;
+  padding: 12px 16px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  margin: 4px 0;
+  text-align: left;
+  justify-self: start;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  grid-column: 1;
+}
+
+.bar {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  position: relative;
+  margin: 4px 0;
+  justify-self: stretch;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-radius: 6px;
 }
